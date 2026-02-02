@@ -1,0 +1,253 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Reset & Base
+// ==========================================================================
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+
+  @include respond-to('md') {
+    font-size: $font-size-small;
+  }
+}
+
+// Typography
+// ==========================================================================
+
+p {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: 27px;
+  color: $text-color;
+  margin-bottom: $spacing-sm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  color: $dark-color;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  @include transition(all, 0.3s, ease-out);
+  font-family: $font-family-base;
+}
+
+// Lists
+// ==========================================================================
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+// Form Elements
+// ==========================================================================
+
+button,
+input,
+textarea {
+  border: 0;
+  background: transparent;
+  @include transition(all, 0.4s);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Links
+// ==========================================================================
+
+a {
+  display: inline-block;
+  @include transition(all, 0.5s, ease);
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+// Images
+// ==========================================================================
+
+img {
+  max-width: 100%;
+}
+
+// Inline Elements
+// ==========================================================================
+
+span {
+  display: inline-block;
+}
+
+// Container Override
+// ==========================================================================
+
+@media only screen and (min-width: $breakpoint-xl) {
+  .container {
+    min-width: $container-max-width;
+  }
+}
+
+// Utility Classes
+// ==========================================================================
+
+.clear {
+  overflow: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb--35 {
+  margin-bottom: 35px;
+}
+
+.gap-2 {
+  gap: 10px;
+}
+
+.gap-3 {
+  gap: 20px;
+}
+
+// Subtitle
+// ==========================================================================
+
+p.subtitle {
+  font-weight: $font-weight-medium;
+  font-size: 1.1em;
+}
+
+// Sub Text Content (Section Titles)
+// ==========================================================================
+
+.sub-text-content {
+  text-align: center;
+  margin-bottom: $spacing-xl;
+
+  &.text-content-2 h2 {
+    color: $white;
+  }
+
+  &.text-content-3 p {
+    display: inline-block;
+    font-size: $font-size-small;
+    line-height: 100%;
+    font-weight: $font-weight-bold;
+    color: $primary-color;
+    padding: 14px;
+    margin-bottom: $spacing-md;
+    background: #f6f4f8;
+    @include border-radius($border-radius-sm);
+  }
+
+  p {
+    display: inline-block;
+    font-size: $font-size-small;
+    line-height: 100%;
+    font-weight: $font-weight-bold;
+    color: $primary-color;
+    padding: 14px;
+    margin-bottom: $spacing-md;
+    background: #f6f4f8;
+    @include border-radius($border-radius-sm);
+  }
+
+  h2 {
+    font-size: $h2-size;
+    line-height: 50px;
+    font-weight: $font-weight-bold;
+    color: $dark-color;
+    text-transform: capitalize;
+    padding-bottom: $spacing-md;
+    position: relative;
+
+    &:after {
+      // Optional underline effect (commented in original)
+    }
+  }
+}
+
+.text-content-4 {
+  display: inline-block;
+  font-size: $font-size-small;
+  line-height: 100%;
+  font-weight: $font-weight-bold;
+  color: $primary-color;
+  padding: 0;
+  margin-bottom: $spacing-md;
+  background: #f6f4f8;
+  @include border-radius($border-radius-sm);
+
+  p {
+    display: inline-block;
+    font-size: $font-size-base;
+    line-height: 100%;
+    font-weight: $font-weight-bold;
+    color: $white;
+    letter-spacing: 2px;
+    background: $primary-color;
+    padding: $spacing-md;
+    margin-top: 0;
+    margin-bottom: 22px;
+    @include border-radius(30px);
+  }
+}
+
+.whychoose-text-content h2 {
+  font-size: $h2-size;
+  line-height: 50px;
+  font-weight: $font-weight-extrabold;
+  color: $dark-color;
+  text-transform: capitalize;
+  padding-bottom: 22px;
+  margin-top: -7px;
+  margin-bottom: 0;
+  position: relative;
+}

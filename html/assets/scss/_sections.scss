@@ -1,0 +1,1454 @@
+// ==========================================================================
+// Page Sections
+// ==========================================================================
+
+// Banner Section
+// ==========================================================================
+
+.banner {
+  .banner-txt {
+    padding: 175px 0;
+
+    h1 {
+      font-size: $h1-size;
+      line-height: 75px;
+      font-weight: $font-weight-extrabold;
+      color: #1d2860;
+      text-transform: capitalize;
+      margin-top: -18px;
+      margin-bottom: 19px;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      color: $text-color;
+      margin-bottom: $spacing-lg;
+    }
+  }
+
+  .part-img {
+    margin-left: -30px;
+  }
+
+  &.banner-2 {
+    padding-top: 125px;
+    padding-bottom: 0;
+    background-size: cover;
+
+    .banner-txt {
+      padding: 100px 0;
+      padding-top: 230px;
+
+      h1 {
+        color: $dark-color;
+      }
+    }
+
+    .part-img {
+      margin-left: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+.banner-2 {
+  padding-top: 125px;
+  padding-bottom: 0;
+  background-size: cover;
+}
+
+// Solution Banner
+// ==========================================================================
+
+.solution-banner1 {
+  @include section-padding;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.latest-top-banner {
+  background-color: $white;
+
+  &::before {
+    // Optional overlay
+  }
+}
+
+.banner-box-style2 {
+  .item-title {
+    color: $dark-color;
+    font-size: $h2-size;
+    line-height: 50px;
+    font-weight: $font-weight-extrabold;
+    text-transform: capitalize;
+    padding-bottom: $spacing-md;
+    position: relative;
+
+    span {
+      font-weight: $font-weight-extrabold;
+    }
+  }
+
+  .banner-button {
+    margin-top: $spacing-lg;
+  }
+}
+
+// How We Work Section
+// ==========================================================================
+
+.how-we-work-area {
+  position: relative;
+  @include section-padding;
+  background: $gray-light;
+}
+
+.how-we-work-box {
+  text-align: center;
+  padding: 0;
+
+  .we-work-icon {
+    color: $white;
+    background-color: $primary-color;
+    font-size: 40px;
+    line-height: 70px;
+    height: 75px;
+    width: 75px;
+    margin: 0 auto 15px;
+    @include border-radius($border-radius-sm);
+  }
+
+  .we-work-content {
+    background: $white;
+    padding: 30px 20px;
+    @include border-radius($border-radius-sm);
+    @include box-shadow($box-shadow-md);
+  }
+
+  .work-title {
+    color: $dark-color;
+    font-size: $h5-size;
+    font-weight: $font-weight-bold;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+  }
+
+  .work-description {
+    font-size: $font-size-base;
+    line-height: 28px;
+    margin: 0 0 15px;
+    color: $text-color;
+  }
+}
+
+// About Section
+// ==========================================================================
+
+.it-solution-about-area {
+  @include section-padding;
+
+  .part-img img {
+    width: 100%;
+  }
+
+  .about-txt {
+    .sub-text-content {
+      text-align: left;
+
+      h2 {
+        font-size: $h2-size;
+        line-height: 50px;
+        font-weight: $font-weight-bold;
+        color: $dark-color;
+        text-transform: capitalize;
+        padding-bottom: $spacing-md;
+        position: relative;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .txt p {
+      font-size: $font-size-base;
+      line-height: 26px;
+      margin-bottom: 0;
+      margin-top: -30px;
+    }
+
+    .txt .latest-btn {
+      margin-top: 0;
+    }
+  }
+
+  .item-content {
+    .item-title {
+      font-weight: $font-weight-semibold;
+      color: #222222;
+      margin-bottom: 25px;
+    }
+
+    .about-list {
+      margin: 40px 0 50px;
+
+      li {
+        padding-left: 32px;
+        font-weight: $font-weight-semibold;
+        color: $dark-color;
+        margin-bottom: 15px;
+        position: relative;
+        font-size: 18px;
+        background: #f6f4f8;
+        padding: 10px 35px;
+
+        &:after {
+          content: "\ea7c";
+          font-family: IcoFont !important;
+          font-size: 22px;
+          font-weight: $font-weight-semibold;
+          color: $dark-color;
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          @include transform(translateY(-50%));
+        }
+      }
+    }
+  }
+
+  .why-choose-txt {
+    .whychoose-text-content h2:after {
+      display: none;
+    }
+
+    .txt p {
+      font-size: $font-size-base;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// Why Choose Section
+// ==========================================================================
+
+.it-solution-whychoose-area {
+  @include section-padding;
+  background: $gray-light;
+
+  .part-img img {
+    width: 100%;
+  }
+
+  .why-choose-txt {
+    margin-left: -30px;
+
+    .whychoose-text-content {
+      text-align: left;
+      margin-bottom: 31px;
+
+      h2 {
+        font-size: $h2-size;
+        line-height: 50px;
+        font-weight: $font-weight-extrabold;
+        color: $dark-color;
+        text-transform: capitalize;
+        padding-bottom: $spacing-md;
+        position: relative;
+      }
+    }
+
+    .txt p {
+      font-size: $font-size-base;
+      line-height: 26px;
+      margin-bottom: $spacing-xl;
+      margin-top: -30px;
+    }
+  }
+}
+
+// Counter Section
+// ==========================================================================
+
+.it-counter-area {
+  position: relative;
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-xl;
+}
+
+.bg-counter1 {
+  background: $gray-light;
+}
+
+.counter-section .outer-box {
+  overflow: hidden;
+  background: $white;
+  padding: 50px 0;
+}
+
+.counter-box {
+  position: relative;
+  overflow: hidden;
+  color: $white;
+
+  .item {
+    color: #222;
+    width: 100%;
+  }
+
+  .column .icon span {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 20px;
+    color: #ab7442;
+    @include transition(all, 500ms, ease);
+  }
+
+  .count-outer {
+    margin-top: 10px;
+    color: $dark-color;
+    position: relative;
+    font-size: 42px;
+    font-weight: $font-weight-bold;
+
+    .count-text {
+      margin-bottom: 5px;
+      display: block;
+    }
+  }
+
+  .item .inner-box {
+    position: relative;
+    text-align: center;
+    padding-top: 25px;
+
+    .icon-box {
+      line-height: 40px;
+
+      i {
+        color: $primary-color;
+
+        &:before {
+          margin: 0;
+          font-size: 48px;
+        }
+      }
+    }
+
+    p {
+      font-weight: $font-weight-semibold;
+      font-size: 18px;
+      color: $primary-color;
+    }
+  }
+}
+
+// Service Section
+// ==========================================================================
+
+.it-solution-service-area {
+  position: relative;
+  @include section-padding;
+  background: $gray-light;
+}
+
+.it-service-card-slider .owl-nav {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  button {
+    text-align: center;
+    @include icon-circle(50px);
+    font-size: 18px;
+    color: $white;
+    position: relative;
+    z-index: 2;
+
+    &:after {
+      @include pseudo;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include border-radius($border-radius-round);
+      opacity: 0;
+      @include transition(all, 0.4s);
+      z-index: -1;
+    }
+
+    &:hover {
+      color: $white;
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.it-service-card.style1 {
+  .service-wrap {
+    text-align: center;
+    background: $white;
+    padding: 15px 15px 0;
+    @include box-shadow($box-shadow-card);
+    @include border-radius(3px);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: $spacing-lg;
+
+    .img-part {
+      position: relative;
+
+      .icon-part {
+        width: 85px;
+        height: 85px;
+        line-height: 85px;
+        border: 3px solid $white;
+        @include border-radius($border-radius-round);
+        background: $primary-color;
+        color: $white;
+        @include box-shadow(0 0 30px #a79f9f);
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -35px;
+        margin: 0 auto;
+      }
+    }
+
+    .content-part {
+      position: relative;
+      padding: 45px 0 73px;
+
+      .title {
+        font-size: $h4-size;
+        line-height: 40px;
+        margin-bottom: 10px;
+
+        a {
+          color: $dark-color;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .btn-part {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        @include transition(all, 0.3s, ease);
+
+        a {
+          font-size: 26px;
+          padding: 1px;
+          color: $white;
+        }
+      }
+
+      &:before,
+      &:after {
+        @include pseudo;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        @include transition(all, 0.3s, ease);
+      }
+
+      &:before {
+        width: 170px;
+        height: 170px;
+        border: 1px solid #dae9fb;
+        bottom: -125px;
+        @include border-radius(100px);
+      }
+
+      &:after {
+        background: #dae9fb;
+        width: 126px;
+        height: 126px;
+        bottom: -98px;
+        @include border-radius(100px);
+      }
+    }
+
+    &:after {
+      @include pseudo;
+      left: 50%;
+      bottom: 0;
+      @include transform(translateX(-50%));
+      width: 0;
+      height: 2px;
+      background: $primary-color;
+      @include transition(all, 0.5s);
+    }
+
+    &:hover {
+      .content-part .btn-part {
+        bottom: 0;
+      }
+
+      .content-part:before {
+        width: 182px;
+        height: 182px;
+        border-color: $primary-color;
+      }
+
+      .content-part:after {
+        width: 140px;
+        height: 140px;
+        background: $primary-color;
+      }
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+img.img-tt {
+  padding: 16px;
+}
+
+// Portfolio Section
+// ==========================================================================
+
+.portfolio {
+  background: $primary-color;
+  @include section-padding;
+
+  .slider-wrap {
+    max-width: 1392px;
+    margin: 0 auto;
+
+    .project-box-slider .owl-dots {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 60px;
+
+      .owl-dot {
+        width: 12px;
+        height: 12px;
+        background: #c5c5dc;
+        @include border-radius($border-radius-round);
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.active {
+          background: $dark-color;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-card {
+  position: relative;
+
+  img {
+    @include border-radius($border-radius-md);
+  }
+
+  .portfolio-card-text-area {
+    background-color: $dark-color;
+    @include border-radius(0 10px 0 10px);
+    padding: 93px 20px 25px 20px;
+    @include transition(all, 0.8s, ease-in-out);
+    transform-origin: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 90%;
+    @include transform(rotateY(90deg));
+
+    h4 {
+      margin-bottom: 5px;
+      font-size: 20px;
+      font-weight: $font-weight-semibold;
+
+      a {
+        color: $white;
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    a i {
+      width: 55px;
+      height: 40px;
+      font-size: 25px;
+      @include border-radius($border-radius-sm);
+      @include inline-flex-center;
+      color: $dark-color;
+      background-color: $white;
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &:hover .portfolio-card-text-area {
+    @include transform(rotateY(0));
+  }
+}
+
+// Pricing Section
+// ==========================================================================
+
+.pricing-box-area {
+  position: relative;
+  @include section-padding;
+}
+
+.rs-pricing .pricing-table {
+  padding: 30px;
+  @include box-shadow(0 0 30px #eee);
+  background: $white;
+  @include border-radius($border-radius-md);
+  position: relative;
+  text-align: center;
+  margin: 0 7px 50px 0;
+
+  .pricing-badge {
+    top: 30px;
+    left: 0;
+    padding: 10px 23px 11px;
+    background-color: $primary-color;
+    @include border-radius(0 30px 30px 0);
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    position: absolute;
+    color: $white;
+    line-height: 1;
+    z-index: 1;
+
+    &.white-color-bg {
+      background: $white;
+      color: #106eea;
+    }
+
+    &.secondary-bg {
+      background: $primary-color;
+    }
+  }
+
+  .pricing-icon {
+    margin-bottom: 0;
+    margin-top: 50px;
+
+    img {
+      width: 110px;
+    }
+  }
+
+  .pricing-table-price {
+    margin-bottom: 30px;
+
+    .pricing-table-bags {
+      .pricing-currency {
+        font-size: 25px;
+        font-weight: $font-weight-semibold;
+        color: $dark-color;
+      }
+
+      .table-price-text {
+        font-size: 52px;
+        font-weight: $font-weight-semibold;
+        color: $dark-color;
+      }
+
+      .table-period {
+        color: $text-color;
+        font-size: $font-size-base;
+        font-weight: $font-weight-medium;
+        display: block;
+      }
+    }
+  }
+
+  .pricing-table-body {
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: $gray-border;
+    padding: 10px;
+
+    li {
+      text-align: left;
+      padding: 8px 0;
+      margin-bottom: 0;
+      font-size: $font-size-base;
+      font-weight: $font-weight-normal;
+
+      i {
+        float: right;
+        margin-right: 0;
+        color: $primary-color;
+      }
+    }
+  }
+
+  &.primary-bg {
+    background: $primary-color;
+
+    .pricing-table-price .pricing-table-bags {
+      .pricing-currency,
+      .table-price-text,
+      .table-period {
+        color: $white;
+      }
+    }
+
+    .pricing-table-body {
+      border-color: $primary-color;
+
+      li {
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &.light-gray-bg {
+    background-color: #f3f7ff;
+    border: 1px solid $gray-border;
+    @include border-radius($border-radius-sm);
+    @include box-shadow(0 0 10px 0 rgba(0, 0, 0, 0));
+
+    .pricing-table-price .pricing-table-bags {
+      .pricing-currency,
+      .table-price-text {
+        color: #03228f;
+      }
+    }
+
+    .pricing-table-body li i {
+      color: #101010;
+    }
+  }
+
+  &.new-style {
+    @include box-shadow(none);
+    background: transparent;
+    border: 2px solid $gray-border;
+  }
+}
+
+// Team Section
+// ==========================================================================
+
+.our-experts-team-area {
+  position: relative;
+  @include section-padding;
+  background: $gray-light;
+}
+
+.single-expert-team-wrap {
+  padding: 30px 50px;
+  @include border-radius($border-radius-md);
+  border: 2px solid $gray-border;
+  @include box-shadow($box-shadow-lg);
+  background: $white;
+  margin-bottom: 0;
+  position: relative;
+  @include transition(all, 0.3s, ease-in);
+
+  &:before {
+    @include pseudo;
+    height: 1px;
+    width: 100%;
+    bottom: 100px;
+    left: 0;
+    background: $gray-border;
+  }
+
+  &:hover {
+    @include border-radius(0);
+    @include box-shadow(0 0 20px 0 rgba(211, 220, 255, 0.78));
+  }
+
+  .thumb img {
+    @include border-radius($border-radius-round);
+  }
+
+  .team-details {
+    margin-top: $spacing-lg;
+
+    h2 {
+      font-weight: $font-weight-semibold;
+      font-size: $h5-size;
+      color: $dark-color;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-weight: $font-weight-semibold;
+      font-size: 18px;
+      color: #444444;
+      margin-bottom: 0;
+    }
+
+    .social-area {
+      margin: 23px 0 0;
+      padding: 30px 0 0;
+      position: relative;
+    }
+  }
+}
+
+.meet-our-team-box .single-expert-team-wrap {
+  @include box-shadow(none);
+
+  &:hover {
+    @include border-radius($border-radius-md);
+    @include box-shadow($box-shadow-lg);
+    background: $white;
+  }
+}
+
+// Testimonial Section
+// ==========================================================================
+
+.it-testimonial-box-area {
+  position: relative;
+  @include section-padding;
+  background: $white;
+}
+
+.it-testimonial-slider .owl-nav {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  button {
+    text-align: center;
+    @include icon-circle(50px);
+    font-size: 18px;
+    color: $white;
+    position: relative;
+    z-index: 2;
+
+    &:after {
+      @include pseudo;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include border-radius($border-radius-round);
+      opacity: 0;
+      @include transition(all, 0.4s);
+      z-index: -1;
+    }
+
+    &:hover {
+      color: $white;
+      border-color: transparent;
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.testimonial-right-img {
+  padding-left: 100px;
+}
+
+.testimonial-single.st-3 {
+  background: $white;
+  padding: 30px;
+  @include border-radius($border-radius-md);
+  border: 2px solid $gray-border;
+  position: relative;
+  margin-top: 35px;
+
+  &:hover .testimonial-name.st-3 h5 a {
+    color: $primary-color;
+  }
+
+  > p {
+    margin-bottom: 25px;
+  }
+}
+
+.testimonial-name.st-3 {
+  display: inline-block;
+  padding-top: 10px;
+
+  > h5 a {
+    color: $dark-color;
+  }
+}
+
+.testimonial-single .testimonial-img.st-3 {
+  height: 54px;
+  width: 75px;
+  margin-right: 20px;
+  float: left;
+}
+
+.testimonial-quote {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 40px;
+  color: #6639ff;
+  background: $white;
+  @include border-radius($border-radius-round);
+  @include box-shadow(0 10px 30px rgba(16, 0, 71, 0.1));
+  position: absolute;
+  right: 68px;
+  bottom: -20px;
+  z-index: 5;
+
+  &.st-3 {
+    height: 80px;
+    width: 80px;
+    border: 7px solid $gray-light;
+    @include box-shadow(none);
+    right: 30px;
+    top: -42px;
+    bottom: auto;
+    line-height: 66px;
+    color: $white;
+    background: $primary-color;
+
+    i {
+      font-weight: $font-weight-bold;
+      font-size: 35px;
+    }
+  }
+}
+
+.testimonial-review li {
+  font-size: 18px;
+  line-height: 38px;
+  color: #ffc400;
+  display: inline-block;
+  margin: 0 1px;
+}
+
+// Blog Section
+// ==========================================================================
+
+.blog-box-area {
+  @include section-padding;
+  background: $gray-light;
+}
+
+.news-section-two .btn-box {
+  margin-top: 20px;
+}
+
+.news-block-two {
+  position: relative;
+  margin-bottom: $spacing-lg;
+
+  .inner-box {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: $white;
+    @include transition(all, 500ms, ease);
+    @include box-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+
+    .image {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        position: relative;
+        width: 100%;
+        display: block;
+        @include transition(all, 500ms, ease);
+      }
+    }
+
+    &:before {
+      @include pseudo;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      @include transform(scale(0, 1));
+      @include transition(all, 500ms, ease);
+    }
+
+    &:hover {
+      &::before {
+        @include transform(scale(1, 1));
+      }
+
+      .image img {
+        @include transform(scale(1.09, 1.09));
+      }
+
+      h3 a {
+        color: $primary-color;
+      }
+    }
+
+    .lower-content {
+      position: relative;
+      padding: 20px 0 0;
+    }
+
+    .post-meta {
+      position: relative;
+      margin-bottom: 10px;
+
+      li {
+        position: relative;
+        color: $text-color;
+        font-size: $font-size-base;
+        padding-left: 25px;
+        margin-right: 15px;
+        display: inline-block;
+        @include transition(all, 500ms, ease);
+
+        .icon {
+          position: absolute;
+          left: 0;
+          top: 4px;
+          color: $primary-color;
+          @include transition(all, 500ms, ease);
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    p {
+      font-size: $font-size-base;
+      line-height: 1.5;
+      color: $text-color;
+      margin-bottom: 17px;
+    }
+
+    h3 a {
+      position: relative;
+      color: $dark-color;
+      @include transition(all, 500ms, ease);
+      font-size: $h4-size;
+    }
+  }
+}
+
+// Breadcrumb Section
+// ==========================================================================
+
+.it-solution-breadcrumb {
+  padding: 150px 0 0;
+  margin: 0;
+  background-image: url(../img/banner-bg4.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+
+  .part-txt {
+    text-align: center;
+    padding: 145px 0;
+
+    h1 {
+      font-size: 60px;
+      line-height: 100%;
+      font-weight: 900;
+      color: $dark-color;
+      margin-top: -10px;
+      margin-bottom: $spacing-lg;
+    }
+
+    ul {
+      padding: 0;
+      margin-bottom: -3px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      li {
+        list-style: none;
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: $font-weight-semibold;
+        color: $primary-color;
+        margin-right: 10px;
+
+        &.color {
+          color: $dark-color;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .section-icons2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    .icon-one {
+      position: absolute;
+      left: 30%;
+    }
+  }
+}
+
+// Project Section
+// ==========================================================================
+
+.project-section {
+  position: relative;
+  @include section-padding;
+
+  .filters {
+    margin-bottom: $spacing-xl;
+    text-align: center;
+
+    .filter-tabs {
+      position: relative;
+      display: block;
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+      font-size: $font-size-base;
+      line-height: 30px;
+      color: $dark-color;
+      font-weight: $font-weight-medium;
+      cursor: pointer;
+      margin: 0 22px 10px;
+      @include transition(all, 300ms, ease);
+
+      &:before {
+        position: absolute;
+        right: -25px;
+        font-size: 13px;
+        color: $primary-color;
+        content: "/";
+      }
+
+      &:last-child:before {
+        display: none;
+      }
+
+      &.active,
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &.full-width {
+    padding-bottom: 65px;
+
+    &:before {
+      display: none;
+    }
+
+    .outer-container {
+      max-width: 100%;
+      padding: 0 40px;
+
+      .btn-box {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .outer-container {
+    max-width: 1390px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+// Portfolio Details
+// ==========================================================================
+
+.portfolio-details-box {
+  @include section-padding;
+
+  .main-img {
+    @include border-radius($border-radius-md);
+    overflow: hidden;
+    margin-bottom: $spacing-xl;
+
+    .portfolio-details-box-slider .single-box {
+      width: 560px;
+      @include border-radius($border-radius-md);
+      overflow: hidden;
+    }
+  }
+
+  .main-txt {
+    padding-bottom: $spacing-xl;
+
+    .information {
+      padding: 55px 30px;
+      background: #f5f5f5;
+      @include border-radius($border-radius-md);
+
+      h3 {
+        font-size: $h3-size;
+        line-height: 100%;
+        font-weight: $font-weight-bold;
+        color: $dark-color;
+        margin-top: -5px;
+        margin-bottom: 27px;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          list-style: none;
+          display: flex;
+          font-size: 17px;
+          line-height: 29px;
+          color: $text-color;
+          margin-bottom: 8px;
+
+          &:last-child {
+            margin-bottom: -9px;
+          }
+
+          .strong {
+            min-width: 80px;
+            font-weight: $font-weight-semibold;
+            color: $dark-color;
+          }
+
+          .divider {
+            font-weight: $font-weight-bold;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    .txt {
+      padding-left: 0;
+      margin-bottom: 0;
+
+      h2 {
+        font-size: 40px;
+        line-height: 100%;
+        font-weight: $font-weight-bold;
+        color: $dark-color;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: $font-size-base;
+        line-height: 26px;
+        color: $text-color;
+        margin-bottom: $spacing-md;
+      }
+    }
+  }
+
+  .overview {
+    background: #f5f5f5;
+    @include border-radius($border-radius-md);
+    padding: $spacing-xl;
+    margin-bottom: $spacing-xl;
+
+    .txt {
+      margin-bottom: -22px;
+
+      h2 {
+        font-size: $h3-size;
+        line-height: 100%;
+        font-weight: $font-weight-bold;
+        color: $dark-color;
+        margin-top: -5px;
+        margin-bottom: 18px;
+      }
+
+      p {
+        font-size: $font-size-base;
+        line-height: 26px;
+        color: $text-color;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .related-portfolio .title {
+    margin-bottom: $spacing-xl;
+
+    h2 {
+      font-size: $h2-size;
+      line-height: 50%;
+      font-weight: $font-weight-bold;
+      color: $dark-color;
+    }
+  }
+}
+
+.related-portfolio-slider {
+  padding: 0;
+  background: transparent;
+  margin-top: 0;
+
+  .owl-nav {
+    position: absolute;
+    top: -82px;
+    right: 0;
+
+    button {
+      text-align: center;
+      width: 52px;
+      height: 52px;
+      line-height: 55px;
+      @include border-radius($border-radius-round);
+      font-size: 18px;
+      position: relative;
+      z-index: 1;
+
+      &.owl-prev {
+        margin-right: 20px;
+        font-size: 23px;
+        color: $white;
+      }
+
+      &.owl-next {
+        margin-right: 0;
+        font-size: 23px;
+        color: $white;
+      }
+
+      &:after {
+        @include pseudo;
+        top: 0;
+        left: 0;
+        width: 52px;
+        height: 52px;
+        background: $dark-color;
+        @include border-radius($border-radius-round);
+        @include transition(all, 0.4s);
+        opacity: 0;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: $white;
+
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// Service Details
+// ==========================================================================
+
+.service-details {
+  @include section-padding;
+
+  &__content {
+    p {
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0 0 25px;
+      font-size: $h3-size;
+      font-weight: $font-weight-semibold;
+      color: $dark-color;
+    }
+
+    img {
+      @include border-radius($border-radius-md);
+      max-width: 100%;
+    }
+  }
+
+  &__image {
+    margin-bottom: $spacing-xl;
+
+    > img {
+      width: 100%;
+      @include border-radius($border-radius-md);
+    }
+  }
+
+  &__main {
+    p {
+      margin: 0;
+    }
+
+    .service-details__content ul {
+      margin-top: 33px;
+      list-style: none;
+
+      li {
+        color: $text-color;
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 17px;
+        font-weight: $font-weight-medium;
+
+        &:before {
+          content: "\f00e";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          @include transform(translate(0, -50%));
+          width: 34px;
+          height: 34px;
+          background: $primary-color;
+          @include border-radius($border-radius-round);
+          @include flex-center;
+          color: $white;
+          font-family: IcoFont;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// CSS Custom Properties (kept for runtime flexibility)
+:root {
+  --surface-color: #fff;
+  --curve: 20;
+  --text-color: #334155;
+  --light-color: #94A3B8;
+  --primary-color: #7001E4;
+  --secondary-color: #6FF593;
+  --gap-space: 2.5rem;
+}
+
+// SCSS Variables
+// ==========================================================================
+
+// Colors
+$primary-color: #7001E4;
+$secondary-color: #6FF593;
+$dark-color: #000219;
+$text-color: #454545;
+$text-light: #94A3B8;
+$white: #ffffff;
+$black: #000000;
+$gray-light: #f9f9f9;
+$gray-border: #ebebeb;
+$surface-color: #fff;
+
+// Typography
+$font-family-base: "Raleway", sans-serif;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$line-height-base: 1.5;
+
+// Heading Sizes
+$h1-size: 64px;
+$h2-size: 45px;
+$h3-size: 30px;
+$h4-size: 24px;
+$h5-size: 22px;
+$h6-size: 18px;
+
+// Spacing
+$spacing-xs: 10px;
+$spacing-sm: 15px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 50px;
+$spacing-xxl: 100px;
+
+// Border Radius
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 15px;
+$border-radius-round: 50%;
+
+// Shadows
+$box-shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.1);
+$box-shadow-md: 0 10px 20px rgba(0, 0, 0, 0.1);
+$box-shadow-lg: 0px 0px 21px 0px rgba(206, 206, 206, 0.78);
+$box-shadow-card: 7px 10px 40px rgba(13, 52, 79, 0.1);
+
+// Transitions
+$transition-fast: 0.3s ease;
+$transition-base: 0.5s ease;
+$transition-slow: 0.7s ease;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Container
+$container-max-width: 1400px;
+
+// Z-index
+$z-index-dropdown: 10;
+$z-index-header: 11;
+$z-index-modal: 99;
+$z-index-tooltip: 9999;

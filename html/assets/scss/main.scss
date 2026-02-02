@@ -1,0 +1,44 @@
+// ==========================================================================
+// Souhoola - Main SCSS File
+// ==========================================================================
+//
+// Table of Contents:
+//
+// 1. Variables - Colors, fonts, spacing, breakpoints
+// 2. Mixins - Reusable patterns and utilities
+// 3. Base - Typography, resets, utility classes
+// 4. Animations - Keyframe animations
+// 5. Components - Buttons, cards, forms, etc.
+// 6. Header - Navigation and header styles
+// 7. Sections - Page section styles
+// 8. Pages - Page-specific styles
+// 9. Footer - Footer styles
+//
+// ==========================================================================
+
+// 1. Variables
+@import 'variables';
+
+// 2. Mixins
+@import 'mixins';
+
+// 3. Base
+@import 'base';
+
+// 4. Animations
+@import 'animations';
+
+// 5. Components
+@import 'components';
+
+// 6. Header
+@import 'header';
+
+// 7. Sections
+@import 'sections';
+
+// 8. Pages
+@import 'pages';
+
+// 9. Footer
+@import 'footer';

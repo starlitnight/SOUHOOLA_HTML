@@ -1,0 +1,177 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+// Transitions
+@mixin transition($properties: all, $duration: 0.3s, $timing: ease) {
+  -webkit-transition: $properties $duration $timing;
+  -moz-transition: $properties $duration $timing;
+  -ms-transition: $properties $duration $timing;
+  -o-transition: $properties $duration $timing;
+  transition: $properties $duration $timing;
+}
+
+// Transform
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+// Flexbox
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin inline-flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Box Shadow
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Gradient
+@mixin gradient($direction, $colors...) {
+  background: -webkit-linear-gradient($direction, $colors);
+  background: linear-gradient($direction, $colors);
+}
+
+// Pseudo Element Base
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// Overlay
+@mixin overlay($bg: rgba(0, 0, 0, 0.5)) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $bg;
+}
+
+// Text Truncate
+@mixin text-truncate($lines: 1) {
+  @if $lines == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+// Button Base
+@mixin button-base {
+  display: inline-block;
+  font-weight: $font-weight-semibold;
+  text-align: center;
+  cursor: pointer;
+  @include transition(all, 0.5s, ease);
+  position: relative;
+  overflow: hidden;
+}
+
+// Icon Circle
+@mixin icon-circle($size, $bg: $primary-color, $color: $white) {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  text-align: center;
+  background: $bg;
+  color: $color;
+  @include border-radius(50%);
+}
+
+// Section Padding
+@mixin section-padding($top: 100px, $bottom: 100px) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+// Responsive Breakpoints
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @media (max-width: #{$breakpoint-sm - 1}) { @content; }
+  } @else if $breakpoint == 'md' {
+    @media (max-width: #{$breakpoint-md - 1}) { @content; }
+  } @else if $breakpoint == 'lg' {
+    @media (max-width: #{$breakpoint-lg - 1}) { @content; }
+  } @else if $breakpoint == 'xl' {
+    @media (max-width: #{$breakpoint-xl - 1}) { @content; }
+  }
+}
+
+@mixin respond-from($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @media (min-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == 'md' {
+    @media (min-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == 'lg' {
+    @media (min-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == 'xl' {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+}
+
+// Clearfix
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Placeholder Color
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder { color: $color; }
+  &:-moz-placeholder { color: $color; }
+  &::-moz-placeholder { color: $color; }
+  &:-ms-input-placeholder { color: $color; }
+}
+
+// Keyframe Animation
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+
+// Animation
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  animation: $animation;
+}
