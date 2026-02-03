@@ -129,7 +129,7 @@
         loop: true,
         smartSpeed: 1000,
         margin: 30,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         dots: false,

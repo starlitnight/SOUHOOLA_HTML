@@ -1224,7 +1224,7 @@ p.subtitle {
   width: 80px;
   height: 80px;
   position: absolute;
-  bottom: 100%;
+  bottom: 99%;
   right: 0;
   z-index: 1;
 }
@@ -1255,19 +1255,20 @@ p.subtitle {
   font-size: 0.8em;
   color: #D7BDCA;
 }
-.products .card__description {
+.products ul.card__description {
   padding: 0 2em 1em;
-  margin: 0;
+  margin: 20px;
   color: var(--text-color);
   /*@include text-truncate(3);*/
   font-size: 0.9em;
   line-height: 1.5em;
+  list-style: circle;
 }
-
 .products-slider-wrapper {
   position: relative;
-  padding: 0 5vw;
-  margin: 2rem 0;
+  padding: 0 80px;
+  margin: 2rem auto;
+  max-width: 1600px;
 }
 
 .products-slider.owl-carousel .owl-stage {
@@ -1321,10 +1322,12 @@ p.subtitle {
   color: #ffffff;
 }
 .products-slider.owl-carousel .owl-nav button.owl-prev {
-  margin-left: -25px;
+  position: absolute;
+  left: -70px;
 }
 .products-slider.owl-carousel .owl-nav button.owl-next {
-  margin-right: -25px;
+  position: absolute;
+  right: -70px;
 }
 .products-slider.owl-carousel .owl-nav button i {
   line-height: 50px;
@@ -1376,7 +1379,7 @@ p.subtitle {
 }
 .products-slider.owl-carousel .product-item .card__image {
   width: 100%;
-  height: 350px;
+  height: 440px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -1424,7 +1427,7 @@ p.subtitle {
   width: 80px;
   height: 80px;
   position: absolute;
-  bottom: 100%;
+  bottom: 99%;
   right: 0;
   z-index: 1;
 }
@@ -1440,6 +1443,14 @@ p.subtitle {
 .products-slider.owl-carousel .product-item .card__description {
   padding: 0 1.5em 1.5em;
   margin: 0;
+  color: var(--text-color);
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+.products-slider.owl-carousel .product-item .card__description ul {
+  list-style: disc;
+  margin-left: 17px;
+  font-weight: 600;
   color: var(--text-color);
   font-size: 0.9em;
   line-height: 1.5em;
