@@ -117,7 +117,7 @@
 }
 
 // Section Padding
-@mixin section-padding($top: 100px, $bottom: 100px) {
+@mixin section-padding($top: 80px, $bottom: 80px) {
   padding-top: $top;
   padding-bottom: $bottom;
 }

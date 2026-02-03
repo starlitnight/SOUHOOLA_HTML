@@ -73,11 +73,11 @@
 }
 
 .latest-top-banner {
-  background-color: $white;
+    background-color: $gray-light;
 
-  &::before {
-    // Optional overlay
-  }
+    &::before {
+        // Optional overlay
+    }
 }
 
 .banner-box-style2 {
@@ -240,38 +240,39 @@
 // ==========================================================================
 
 .it-solution-whychoose-area {
-  @include section-padding;
-  background: $gray-light;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background: var(--primary-color);
 
-  .part-img img {
-    width: 100%;
-  }
-
-  .why-choose-txt {
-    margin-left: -30px;
-
-    .whychoose-text-content {
-      text-align: left;
-      margin-bottom: 31px;
-
-      h2 {
-        font-size: $h2-size;
-        line-height: 50px;
-        font-weight: $font-weight-extrabold;
-        color: $dark-color;
-        text-transform: capitalize;
-        padding-bottom: $spacing-md;
-        position: relative;
-      }
+    .part-img img {
+        width: 100%;
     }
 
-    .txt p {
-      font-size: $font-size-base;
-      line-height: 26px;
-      margin-bottom: $spacing-xl;
-      margin-top: -30px;
+    .why-choose-txt {
+        margin-left: -30px;
+
+        .whychoose-text-content {
+            text-align: left;
+            margin-bottom: 31px;
+
+            h2 {
+                font-size: $h2-size;
+                line-height: 50px;
+                font-weight: $font-weight-extrabold;
+                color: #fff;
+                text-transform: capitalize;
+                padding-bottom: $spacing-md;
+                position: relative;
+            }
+        }
+
+        .txt p {
+            font-size: $font-size-base;
+            line-height: 26px;
+            margin-bottom: $spacing-xl;
+            margin-top: -30px;
+        }
     }
-  }
 }
 
 // Counter Section

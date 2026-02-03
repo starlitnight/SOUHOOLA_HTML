@@ -3,13 +3,13 @@
 // ==========================================================================
 
 .footer {
-  padding: 50px 0 30px;
+  padding: 50px 0 0;
   background-color: var(--primary-color);
 }
 
 // Footer Top
 .footer-top {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .footer-logo {
@@ -26,8 +26,8 @@
 // App Store Buttons
 .footer-app-buttons {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
   gap: 10px;
   flex-wrap: wrap;
 
@@ -75,31 +75,29 @@
 
 // Social Icons
 .footer-social-icons {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 15px;
-  padding-top:20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 2px;
+    padding-top: 0px;
 
-  a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border: 1px solid rgba($white, 0.5);
-    border-radius: 50%;
-    color: $white;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    text-decoration: none;
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: start;
+        width: 45px;
+        height: 45px;
+        border: 0px solid rgba($white, 0.5);
+        border-radius: 50%;
+        color: $white;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        text-decoration: none;
 
-    &:hover {
-      border-color: var(--secondary-color);
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
+        &:hover {
+            color: var(--secondary-color);
+        }
     }
-  }
 }
 
 // Footer Middle
@@ -112,40 +110,49 @@
 
 .footer-nav-links,
 .footer-legal-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 30px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 15px;
     margin: 0;
     padding: 0;
+    list-style: none;
 
-    a {
-      color: rgba($white, 0.85);
-      font-size: 15px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      text-decoration: none;
 
-      &:hover {
-        color: var(--secondary-color);
-      }
+    li {
+        margin: 0;
+        padding: 0;
+        color: rgba($white, 0.85);
+
+        a {
+            color: rgba($white, 0.85);
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
     }
-  }
+}
+.footer-nav-links li a {
+    font-size: 18px;
+    font-weight:600;
+
 }
 
 // Footer Bottom
 .footer-bottom {
-  padding-top: 25px;
+  background-color: #1a0033;
+  padding: 20px 0;
+  margin-top: 30px;
 }
 
 .copyright-txt {
   span {
-    color: rgba($white, 0.7);
+    color: rgba($white, 0.85);
     font-size: 14px;
 
     a {

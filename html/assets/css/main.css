@@ -1578,10 +1578,10 @@ p.subtitle {
   font-weight: 600;
 }
 .item-wrap .title a {
-  color: #000219;
+  color: #fff;
 }
 .item-wrap .title a:hover {
-  color: #7001E4;
+  color: #6FF593;
 }
 
 .header {
@@ -1805,15 +1805,15 @@ p.subtitle {
 }
 
 .solution-banner1 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   overflow: hidden;
   position: relative;
   z-index: 2;
 }
 
 .latest-top-banner {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 .banner-box-style2 .item-title {
   color: #000219;
@@ -1833,8 +1833,8 @@ p.subtitle {
 
 .how-we-work-area {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #f9f9f9;
 }
 
@@ -1878,8 +1878,8 @@ p.subtitle {
 }
 
 .it-solution-about-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .it-solution-about-area .part-img img {
   width: 100%;
@@ -1951,9 +1951,9 @@ p.subtitle {
 }
 
 .it-solution-whychoose-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background: #f9f9f9;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background: var(--primary-color);
 }
 .it-solution-whychoose-area .part-img img {
   width: 100%;
@@ -1969,7 +1969,7 @@ p.subtitle {
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
-  color: #000219;
+  color: #fff;
   text-transform: capitalize;
   padding-bottom: 20px;
   position: relative;
@@ -2054,8 +2054,8 @@ p.subtitle {
 
 .it-solution-service-area {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #f9f9f9;
 }
 
@@ -2250,8 +2250,8 @@ img.img-tt {
 
 .portfolio {
   background: #7001E4;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .portfolio .slider-wrap {
   max-width: 1392px;
@@ -2347,8 +2347,8 @@ img.img-tt {
 
 .pricing-box-area {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .rs-pricing .pricing-table {
@@ -2473,8 +2473,8 @@ img.img-tt {
 
 .our-experts-team-area {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #f9f9f9;
 }
 
@@ -2553,8 +2553,8 @@ img.img-tt {
 
 .it-testimonial-box-area {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #ffffff;
 }
 
@@ -2688,8 +2688,8 @@ img.img-tt {
 }
 
 .blog-box-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #f9f9f9;
 }
 
@@ -2871,8 +2871,8 @@ img.img-tt {
 
 .project-section {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .project-section .filters {
   margin-bottom: 50px;
@@ -2930,8 +2930,8 @@ img.img-tt {
 }
 
 .portfolio-details-box {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .portfolio-details-box .main-img {
   -webkit-border-radius: 10px;
@@ -3101,8 +3101,8 @@ img.img-tt {
 }
 
 .service-details {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .service-details__content p {
   margin: 0;
@@ -3167,19 +3167,19 @@ img.img-tt {
 }
 
 .faq-section-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .error-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
 .contact-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .contact-form-box .form-group {
@@ -3242,8 +3242,8 @@ img.img-tt {
 }
 
 .blog-details-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .blog-details-content .blog-details-img {
@@ -3645,12 +3645,12 @@ img.img-tt {
 }
 
 .footer {
-  padding: 50px 0 30px;
+  padding: 50px 0 0;
   background-color: var(--primary-color);
 }
 
 .footer-top {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .footer-logo a {
@@ -3663,8 +3663,8 @@ img.img-tt {
 
 .footer-app-buttons {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -3709,16 +3709,16 @@ img.img-tt {
   display: flex;
   justify-content: start;
   align-items: start;
-  gap: 15px;
-  padding-top: 20px;
+  gap: 2px;
+  padding-top: 0px;
 }
 .footer-social-icons a {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 45px;
   height: 45px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 0px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   color: #ffffff;
   font-size: 20px;
@@ -3726,9 +3726,7 @@ img.img-tt {
   text-decoration: none;
 }
 .footer-social-icons a:hover {
-  border-color: var(--secondary-color);
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .footer-middle {
@@ -3743,7 +3741,7 @@ img.img-tt {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px 30px;
+  gap: 8px 15px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -3752,11 +3750,12 @@ img.img-tt {
 .footer-legal-links li {
   margin: 0;
   padding: 0;
+  color: rgba(255, 255, 255, 0.85);
 }
 .footer-nav-links li a,
 .footer-legal-links li a {
   color: rgba(255, 255, 255, 0.85);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -3766,12 +3765,19 @@ img.img-tt {
   color: var(--secondary-color);
 }
 
+.footer-nav-links li a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .footer-bottom {
-  padding-top: 25px;
+  background-color: #1a0033;
+  padding: 20px 0;
+  margin-top: 30px;
 }
 
 .copyright-txt span {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
 }
 .copyright-txt span a {
