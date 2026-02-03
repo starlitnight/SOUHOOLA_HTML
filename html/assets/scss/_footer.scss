@@ -3,101 +3,162 @@
 // ==========================================================================
 
 .footer {
-  padding-top: 70px;
+  padding: 50px 0 30px;
   background-color: var(--primary-color);
 }
 
-.footer-logo {
-  text-align: center;
+// Footer Top
+.footer-top {
+  padding-bottom: 40px;
+}
 
+.footer-logo {
   a {
     display: inline-block;
 
     img {
-      width: 150px;
+      width: 180px;
+      height: auto;
     }
   }
 }
 
-.footer-links {
-  margin-top: $spacing-lg;
+// App Store Buttons
+.footer-app-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 
-  ul {
-    justify-content: center;
-    margin-bottom: 0;
-    flex-wrap: wrap;
-
-    li {
-      margin: 0 20px;
-    }
-  }
-
-  li a {
-    color: var(--secondary-color);
-    @include transition(all, 0.35s, ease);
-    position: relative;
-
-    &:after {
-      @include pseudo;
-      bottom: -2px;
-      right: 0;
-      left: auto;
-      width: 0;
-      height: 1px;
-      @include transition(all, 0.35s, ease);
-      background: #343791;
-    }
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid rgba($white, 0.5);
+    border-radius: 8px;
+    color: $white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: transparent;
+    white-space: nowrap;
 
     &:hover {
+      border-color: var(--secondary-color);
+      background-color: rgba($white, 0.1);
       color: var(--secondary-color);
-      @include transition(all, 0.3s, ease-in-out);
+    }
 
-      &:after {
-        width: 100%;
-        left: 0;
-        right: auto;
+    i {
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    span {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      line-height: 1.2;
+      font-weight: 600;
+      font-size: 13px;
+
+      small {
+        font-size: 9px;
+        font-weight: 400;
+        opacity: 0.8;
+        display: block;
       }
     }
   }
 }
 
-.footer-social {
-  border-top: 1px solid #7064c2;
-  margin-top: $spacing-lg;
-  padding: $spacing-lg 0;
+// Social Icons
+.footer-social-icons {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+  padding-top:20px;
 
-  ul {
-    justify-content: flex-end;
-    margin-bottom: 0;
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba($white, 0.5);
+    border-radius: 50%;
+    color: $white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
 
-    li {
-      margin-left: 10px;
+    &:hover {
+      border-color: var(--secondary-color);
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+  }
+}
 
-      a {
-        display: inline-block;
-        border: 0 solid var(--secondary-color);
-        width: 35px;
-        height: 35px;
-        text-align: center;
-        line-height: 35px;
-        @include border-radius($border-radius-round);
-        color: $white;
+// Footer Middle
+.footer-middle {
+  border-top: 1px solid rgba($white, 0.2);
+  border-bottom: 1px solid rgba($white, 0.2);
+  padding: 25px 0;
+  margin-top: 10px;
+}
 
-        &:hover {
-          color: var(--secondary-color);
-        }
+.footer-nav-links,
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: rgba($white, 0.85);
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--secondary-color);
       }
     }
   }
+}
+
+// Footer Bottom
+.footer-bottom {
+  padding-top: 25px;
 }
 
 .copyright-txt {
   span {
-    color: $white;
+    color: rgba($white, 0.7);
+    font-size: 14px;
 
     a {
       color: var(--secondary-color);
-      font-weight: $font-weight-medium;
+      font-weight: 600;
+      text-decoration: none;
     }
+  }
+}
+
+// Responsive
+@media (min-width: 992px) {
+  .footer-app-buttons {
+    justify-content: flex-end;
   }
 }

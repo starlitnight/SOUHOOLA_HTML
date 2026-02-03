@@ -128,7 +128,7 @@
       $('.products-slider').owlCarousel({
         loop: true,
         smartSpeed: 1000,
-        margin: 30,
+        margin: 10,
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
