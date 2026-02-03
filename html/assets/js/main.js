@@ -124,6 +124,33 @@
     }
 });  
 
+      // ========== products-slider JS ===========
+      $('.products-slider').owlCarousel({
+        loop: true,
+        smartSpeed: 1000,
+        margin: 30,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav: true,
+        navText: ['<i class="icofont-double-left"></i>','<i class="icofont-double-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
+
       // ========== project-box-slider JS ===========
       $('.project-box-slider').owlCarousel({
         items: 3,

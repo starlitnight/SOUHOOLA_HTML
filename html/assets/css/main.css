@@ -183,7 +183,7 @@ p.subtitle {
   border-radius: 5px;
 }
 .sub-text-content h2 {
-  font-size: 45px;
+  font-size: 50px;
   line-height: 50px;
   font-weight: 700;
   color: #000219;
@@ -221,7 +221,7 @@ p.subtitle {
 }
 
 .whychoose-text-content h2 {
-  font-size: 45px;
+  font-size: 50px;
   line-height: 50px;
   font-weight: 800;
   color: #000219;
@@ -1264,6 +1264,187 @@ p.subtitle {
   line-height: 1.5em;
 }
 
+.products-slider-wrapper {
+  position: relative;
+  padding: 0 5vw;
+  margin: 2rem 0;
+}
+
+.products-slider.owl-carousel .owl-stage {
+  display: flex;
+}
+.products-slider.owl-carousel .owl-item {
+  display: flex;
+  height: auto;
+}
+.products-slider.owl-carousel .owl-stage-outer {
+  padding: 10px 0;
+}
+.products-slider.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0;
+  margin: 0;
+}
+.products-slider.owl-carousel .owl-nav button {
+  pointer-events: auto;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #7001E4 !important;
+  color: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.products-slider.owl-carousel .owl-nav button:hover {
+  background: #000219 !important;
+  color: #ffffff;
+}
+.products-slider.owl-carousel .owl-nav button.owl-prev {
+  margin-left: -25px;
+}
+.products-slider.owl-carousel .owl-nav button.owl-next {
+  margin-right: -25px;
+}
+.products-slider.owl-carousel .owl-nav button i {
+  line-height: 50px;
+}
+.products-slider.owl-carousel .product-item {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.products-slider.owl-carousel .product-item .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(206, 206, 206, 0.78);
+  box-shadow: 0px 0px 21px 0px rgba(206, 206, 206, 0.78);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.products-slider.owl-carousel .product-item .card:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.products-slider.owl-carousel .product-item .card:hover .card__overlay {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.products-slider.owl-carousel .product-item .card:hover .card__header {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.products-slider.owl-carousel .product-item .card__image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  flex-shrink: 0;
+}
+.products-slider.owl-carousel .product-item .card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.products-slider.owl-carousel .product-item .card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1.5em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.products-slider.owl-carousel .product-item .card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+.products-slider.owl-carousel .product-item .card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+.products-slider.owl-carousel .product-item .card__thumb {
+  flex-shrink: 0;
+  width: auto;
+  height: 45px;
+}
+.products-slider.owl-carousel .product-item .card__description {
+  padding: 0 1.5em 1.5em;
+  margin: 0;
+  color: var(--text-color);
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
 .scroller {
   --gap-space: 2.5rem;
   overflow: hidden;
@@ -1625,7 +1806,7 @@ p.subtitle {
 }
 .banner-box-style2 .item-title {
   color: #000219;
-  font-size: 45px;
+  font-size: 50px;
   line-height: 50px;
   font-weight: 800;
   text-transform: capitalize;
@@ -1696,7 +1877,7 @@ p.subtitle {
   text-align: left;
 }
 .it-solution-about-area .about-txt .sub-text-content h2 {
-  font-size: 45px;
+  font-size: 50px;
   line-height: 50px;
   font-weight: 700;
   color: #000219;
@@ -1774,7 +1955,7 @@ p.subtitle {
   margin-bottom: 31px;
 }
 .it-solution-whychoose-area .why-choose-txt .whychoose-text-content h2 {
-  font-size: 45px;
+  font-size: 50px;
   line-height: 50px;
   font-weight: 800;
   color: #000219;
@@ -2843,7 +3024,7 @@ img.img-tt {
   margin-bottom: 50px;
 }
 .portfolio-details-box .related-portfolio .title h2 {
-  font-size: 45px;
+  font-size: 50px;
   line-height: 50%;
   font-weight: 700;
   color: #000219;
