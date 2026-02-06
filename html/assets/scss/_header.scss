@@ -184,3 +184,34 @@
     }
   }
 }
+
+// Main Navigation Menu
+.main-nav {
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: $font-weight-semibold;
+        color: $dark-color;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 25px;
+
+        &:hover,
+        &.active {
+          color: $primary-color;
+          background-color: rgba($primary-color, 0.08);
+        }
+      }
+    }
+  }
+}

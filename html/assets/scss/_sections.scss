@@ -237,12 +237,19 @@
 }
 
 // Why Choose Section
+// Why Choose Section
 // ==========================================================================
-
 .it-solution-whychoose-area {
     padding-top: 80px;
     padding-bottom: 50px;
-    background: var(--primary-color);
+    background: $primary-color;
+
+    &.souhoola {
+
+        h2.item-title, h5.title a {
+            color: $white;
+        }
+    }
 
     .part-img img {
         width: 100%;
@@ -284,8 +291,8 @@
   padding-bottom: $spacing-xl;
 }
 
-.bg-counter1 {
-  background: $gray-light;
+.bg-counter {
+    background: $secondary-color;
 }
 
 .counter-section .outer-box {
@@ -295,63 +302,63 @@
 }
 
 .counter-box {
-  position: relative;
-  overflow: hidden;
-  color: $white;
-
-  .item {
-    color: #222;
-    width: 100%;
-  }
-
-  .column .icon span {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    font-size: 50px;
-    line-height: 70px;
-    margin-bottom: 20px;
-    color: #ab7442;
-    @include transition(all, 500ms, ease);
-  }
-
-  .count-outer {
-    margin-top: 10px;
-    color: $dark-color;
     position: relative;
-    font-size: 42px;
-    font-weight: $font-weight-bold;
+    overflow: hidden;
+    color: $white;
 
-    .count-text {
-      margin-bottom: 5px;
-      display: block;
+    .item {
+        color: #222;
+        width: 100%;
     }
-  }
 
-  .item .inner-box {
-    position: relative;
-    text-align: center;
-    padding-top: 25px;
+    .column .icon span {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 20px;
+        color: #ab7442;
+        @include transition(all, 500ms, ease);
+    }
 
-    .icon-box {
-      line-height: 40px;
-
-      i {
+    .count-outer {
+        margin-top: 10px;
         color: $primary-color;
+        position: relative;
+        font-size: 42px;
+        font-weight: $font-weight-bold;
 
-        &:before {
-          margin: 0;
-          font-size: 48px;
+        .count-text {
+            margin-bottom: 5px;
+            display: block;
         }
-      }
     }
 
-    p {
-      font-weight: $font-weight-semibold;
-      font-size: 18px;
-      color: $primary-color;
+    .item .inner-box {
+        position: relative;
+        text-align: center;
+        padding-top: 25px;
+
+        .icon-box {
+            line-height: 40px;
+
+            i {
+                color: $primary-color;
+
+                &:before {
+                    margin: 0;
+                    font-size: 48px;
+                }
+            }
+        }
+
+        p {
+            font-weight: $font-weight-semibold;
+            font-size: 22px;
+            color: $primary-color;
+        }
     }
-  }
 }
 
 // Service Section
@@ -1073,65 +1080,72 @@ img.img-tt {
 
 // Breadcrumb Section
 // ==========================================================================
-
+.banner-faq {
+    background-image: url(../img/banner/banner-bg4.jpg);
+    background-repeat: no-repeat;
+}
+.banner-about {
+    background-image: url(../img/banner/banner-bg5.jpg);
+    background-repeat: no-repeat;
+}
 .it-solution-breadcrumb {
-  padding: 150px 0 0;
-  margin: 0;
-  background-image: url(../img/banner-bg4.jpg);
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 650px;
+    padding: 150px 0 0;
+    margin: 0;
+    
+   /* background-color: $primary-color;*/
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
 
-  .part-txt {
-    text-align: center;
-    padding: 145px 0;
+    .part-txt {
+        text-align: center;
+        padding: 145px 0;
 
-    h1 {
-      font-size: 60px;
-      line-height: 100%;
-      font-weight: 900;
-      color: $dark-color;
-      margin-top: -10px;
-      margin-bottom: $spacing-lg;
-    }
-
-    ul {
-      padding: 0;
-      margin-bottom: -3px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-
-      li {
-        list-style: none;
-        font-size: 20px;
-        line-height: 100%;
-        font-weight: $font-weight-semibold;
-        color: $primary-color;
-        margin-right: 10px;
-
-        &.color {
-          color: $dark-color;
-          margin-right: 0;
+        h1 {
+            font-size: 60px;
+            line-height: 100%;
+            font-weight: 900;
+            color: $dark-color;
+            margin-top: -10px;
+            margin-bottom: $spacing-lg;
         }
-      }
-    }
-  }
 
-  .section-icons2 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+        ul {
+            padding: 0;
+            margin-bottom: -3px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
 
-    .icon-one {
-      position: absolute;
-      left: 30%;
+            li {
+                list-style: none;
+                font-size: 20px;
+                line-height: 100%;
+                font-weight: $font-weight-semibold;
+                color: $primary-color;
+                margin-right: 10px;
+
+                &.color {
+                    color: $dark-color;
+                    margin-right: 0;
+                }
+            }
+        }
     }
-  }
+
+    .section-icons2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        .icon-one {
+            position: absolute;
+            left: 30%;
+        }
+    }
 }
 
 // Project Section
@@ -1452,4 +1466,16 @@ img.img-tt {
       }
     }
   }
+}
+
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
+.section-padding{
+    padding-bottom:80px;
+    padding-top:80px;
+}
+.section-padding-md {
+    padding-bottom: 50px;
+    padding-top: 50px;
 }

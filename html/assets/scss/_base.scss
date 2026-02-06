@@ -251,3 +251,12 @@ p.subtitle {
   margin-bottom: 0;
   position: relative;
 }
+.text-primary {
+    color: $primary-color !important;
+}
+.text-secondary {
+    color: $secondary-color !important;
+}
+a.text-primary:Hover, a.text-secondary:Hover {
+    color: $white !important;
+}

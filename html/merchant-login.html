@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head -->
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
+    <title>Merchant Portal Login - Souhoola</title>
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" href="assets/img/souhoola/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate-2.css">
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+    <link href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<!-- end head -->
+
+<body>
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader"><img src="assets/img/Souhoola/loading.gif" alt="loader"></div>
+    </div>
+    <!-- end preloader -->
+    <!-- header section -->
+    <div class="header header-2">
+        <div class="container">
+            <div class="row pt-3 pb-3 justify-content-between">
+                <div class="col-xl-2 col-lg-2 col-6 d-flex align-items-center">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/img/Souhoola/logo.svg" alt="logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="d-xl-none d-lg-none d-flex justify-content-end col-6">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icofont-navigation-menu"></i>
+                    </button>
+                </div>
+                <div class="col-xl-6 col-lg-6 next d-xl-flex d-lg-flex d-none align-items-center justify-content-center">
+                    <nav class="main-nav">
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-4 col-lg-2 col-4 d-xl-flex d-lg-flex d-none align-items-center justify-content-end gap-2">
+                    <a href="#" class=""><img src="assets/img/Souhoola/hotline.png" width="120" /></a>
+                    <a href="#" class="btn btn-primary">Download</a>
+                    <a href="merchant.html" class="btn btn-secondary btn-icon active"><span>Merchant</span> <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header section -->
+
+    <!-- Merchant Login Section -->
+    <section class="merchant-login-page">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-lg-5 col-md-8">
+                    <div class="merchant-login-card">
+                        <div class="login-header">
+                            <div class="login-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h3>Merchant Portal</h3>
+                            <p>Access your dashboard to manage transactions, view reports, and more.</p>
+                        </div>
+                        <form class="login-form" id="merchantLoginForm">
+                            <div class="form-group">
+                                <label for="merchantEmail">Email or Merchant ID</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="text" class="form-control" id="merchantEmail" placeholder="Enter your email or merchant ID" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="merchantPassword">Password</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" class="form-control" id="merchantPassword" placeholder="Enter your password" required>
+                                    <button type="button" class="toggle-password">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-options">
+                                <label class="remember-me">
+                                    <input type="checkbox" name="remember"> Remember me
+                                </label>
+                                <a href="#" class="forgot-password">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-login">
+                                <span>Login to Portal</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                        <div class="login-footer">
+                            <p>Not a partner yet? <a href="merchant.html#become-partner">Apply now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Merchant Login Section -->
+
+    <!-- JAVASCRIPT FILES ========================================= -->
+    <!-- jquery-3.6.0.min JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- owl.carousel.min JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- owl.carousel2.thumbs.min JS -->
+    <script src="assets/js/owl.carousel2.thumbs.min.js"></script>
+    <!-- popper.min JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- bootstrap.min JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- main JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- wow JS -->
+    <script src="assets/js/wow.js"></script>
+
+    <script>
+        // Toggle password visibility
+        document.querySelector('.toggle-password').addEventListener('click', function() {
+            const passwordInput = document.getElementById('merchantPassword');
+            const icon = this.querySelector('i');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+
+        // Form submission
+        document.getElementById('merchantLoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your login logic here
+            alert('Login functionality will be implemented with backend integration.');
+        });
+    </script>
+</body>
+</html>
