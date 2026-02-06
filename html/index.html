@@ -63,7 +63,7 @@
                 </div>-->
                 <div class="col-xl-4 col-lg-2 col-4 d-xl-flex d-lg-flex d-none align-items-center justify-content-end gap-2">
                     <a href="#" class=""><img src="assets/img/Souhoola/hotline.png" width="120" /></a>
-                    <a href="#" class="btn btn-primary">Download</a>
+                    <a href="#" class="btn btn-primary" onclick="downloadApp(event)">Download</a>
 
                     <a href="https://portal.souhoola.com/#/login" target="_blank" class="btn btn-secondary btn-icon"><span>Merchant</span> <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -80,10 +80,10 @@
                         <h1>Buy What You Need Now.<span style="color: #7001E4">Pay Later With Souhoola</span></h1>
                         <p>A smarter way to Buy the things you love, with flexible plans that fit your life. all in one seamless experience.</p>
                         <div class="d-flex gap-2">
-                            <a href="about.html" class="">
+                            <a href="https://play.google.com/store/apps/details?id=com.cicapital.cicf.android.myapplication" target="_blank" class="">
                                 <img src="assets/img/Souhoola/googlePlay.png" width="130" />
                             </a>
-                            <a href="about.html" class="">
+                            <a href="https://apps.apple.com/eg/app/souhoola-%D8%B3%D9%87%D9%88%D9%84%D8%A9/id1514405177" target="_blank" class="">
                                 <img src="assets/img/Souhoola/appStore.png" width="130" />
                             </a>
                         </div>
@@ -265,7 +265,7 @@
                             <div class="count-outer">
                                 <span class="counter-value">3</span><span class="">M+</span>
                                 <p class="">
-                                     App Download 
+                                    App Download
                                 </p>
                             </div>
                         </div>
@@ -720,7 +720,7 @@
                         <div class="footer-logo">
                             <a href="#"><img src="assets/img/Souhoola/logo_white.svg" alt="Souhoola" /></a>
                         </div>
-                       
+
                         <div class="d-flex">
                             <div class="pr-4">
                                 <p class="footer-address text-white">
@@ -741,15 +741,14 @@
                         </div>
                     </div>
                     <!-- Nav Links - Center -->
-                  
                     <!-- App Buttons - Right -->
                     <div class="col-lg-4 col-md-12 text-lg-end">
                         <div class="footer-app-buttons">
-                            <a href="#" class="btn-app-store">
+                            <a href="https://apps.apple.com/eg/app/souhoola-%D8%B3%D9%87%D9%88%D9%84%D8%A9/id1514405177" target="_blank" class="btn-app-store">
                                 <i class="icofont-brand-apple"></i>
                                 <span><small>Download on the</small>App Store</span>
                             </a>
-                            <a href="#" class="btn-google-play">
+                            <a href="https://play.google.com/store/apps/details?id=com.cicapital.cicf.android.myapplication" target="_blank" class="btn-google-play">
                                 <i class="fa-brands fa-google-play"></i>
                                 <span><small>Get it on</small>Google Play</span>
                             </a>
@@ -774,9 +773,9 @@
                     <!-- Legal Links - Center -->
                     <div class="col-lg-4 col-md-12 text-center mb-3 mb-lg-0">
                         <ul class="footer-legal-links list-unstyled d-flex justify-content-center">
-                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
                             <li class="separator">|</li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <!-- Copyright + Scroll Button - Right -->
@@ -785,7 +784,7 @@
                             <div class="copyright-txt">
                                 <span>© 2026 <a href="#">Souhoola</a>. All Rights Reserved.</span>
                             </div>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -808,6 +807,19 @@
     <script src="assets/js/main.js"></script>
     <!-- wow JS -->
     <script src="assets/js/wow.js"></script>
+    <!-- Download redirect based on device -->
+    <script>
+        function downloadApp(e) {
+            e.preventDefault();
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/iPad|iPhone|iPod|Macintosh/.test(userAgent) && 'ontouchend' in document) {
+                window.open('https://apps.apple.com/eg/app/souhoola-%D8%B3%D9%87%D9%88%D9%84%D8%A9/id1514405177', '_blank');
+            } else {
+                window.open('https://play.google.com/store/apps/details?id=com.cicapital.cicf.android.myapplication', '_blank');
+            }
+        }
+    </script>
 </body>
 
 </html>
+
