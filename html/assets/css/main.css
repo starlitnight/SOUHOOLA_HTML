@@ -3228,38 +3228,6 @@ img.img-tt {
   padding-top: 50px;
 }
 
-/* Legal Content (Privacy Policy & Terms) */
-.legal-content h3 {
-  color: var(--primary-color);
-  font-weight: 700;
-  margin-top: 35px;
-  margin-bottom: 15px;
-  font-size: 1.4rem;
-}
-.legal-content h5 {
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-.legal-content p {
-  line-height: 1.8;
-  color: var(--text-color);
-  margin-bottom: 15px;
-}
-.legal-content ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-.legal-content ul li {
-  line-height: 1.8;
-  color: var(--text-color);
-  margin-bottom: 5px;
-}
-.legal-content ul li strong {
-  color: #1e293b;
-}
-
 .page-hero {
   background: linear-gradient(135deg, #7001E4 0%, rgb(74.5851528384, 0.6659388646, 151.8340611354) 100%);
   padding: 135px 0 50px;

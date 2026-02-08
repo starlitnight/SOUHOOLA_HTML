@@ -1395,7 +1395,7 @@
     padding-bottom: 35px;
   }
   .banner-box-style2 {
-    padding-top: 50px;
+    padding-top: 20px;
   }
   .banner-box-style2 .item-title {
     font-size: 34px;
@@ -1425,7 +1425,7 @@
     margin-top: 11px;
   }
   .it-solution-whychoose-area {
-    padding: 60px 0;
+    padding: 50px 0;
   }
   .it-solution-whychoose-area .why-choose-txt {
     margin-left: 0;
@@ -1871,17 +1871,17 @@
     font-size: 15px;
   }
   .portfolio {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-radius: 0px 0px 0px 0px;
   }
   .pricing-box-area {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .our-experts-team-area {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .portfolio .slider-wrap {
     max-width: 290px;
@@ -1892,8 +1892,8 @@
   }
 
   .it-solution-about-area {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .it-solution-about-area .about-txt {
@@ -1915,20 +1915,20 @@
     margin-top: 11px;
   }
   .it-solution-whychoose-area {
-    padding-top: 100px;
-    padding-bottom: 140px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .solution-banner1 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .it-solution-service-area {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .it-counter-area {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .it-solution-whychoose-area .why-choose-txt {
     margin-left: 0;
@@ -1942,7 +1942,14 @@
     margin-bottom: 18px;
   }
   .sub-text-content {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+  .section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .banner-box-style2 {
+    padding-top: 10px;
   }
 
   .it-solution-about-area .about-txt .sub-text-content h2 {
@@ -2179,4 +2186,19 @@
 .it-solution-about-area .part-img img {
   padding-top: 30px;
 }
+}
+
+/* Header buttons mobile */
+@media only screen and (max-width: 991px) {
+  .header-buttons {
+    flex-wrap: wrap;
+    gap: 8px !important;
+  }
+  .header-buttons .btn {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+  .header-buttons img {
+    width: 100px !important;
+  }
 }
