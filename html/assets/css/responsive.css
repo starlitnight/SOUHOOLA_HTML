@@ -2201,4 +2201,71 @@
   .header-buttons img {
     width: 100px !important;
   }
+  .products-slider.owl-carousel .owl-nav {
+    display: none;
+  }
+  .products-slider-wrapper {
+    padding: 0 15px;
+  }
+}
+
+/* How it works mobile slider */
+.screens-slider .screens-slide .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0px 0px 21px 0px rgba(206, 206, 206, 0.78);
+  background-color: #ffffff;
+}
+.screens-slider .screens-slide .screen_body {
+  padding: 20px 25px;
+  background-color: #ffffff;
+}
+.screens-slider .screens-slide .card__number {
+  display: block;
+  margin: 0;
+  font-size: 2.5em;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+.screens-slider .screens-slide .card__title {
+  font-size: 1.4em;
+  margin: 0 0 0.3em;
+  color: var(--text-color);
+}
+.screens-slider .screens-slide .description {
+  color: var(--light-color);
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.screens-slider .screens-slide .card__overlay {
+  position: relative;
+  text-align: center;
+  padding: 10px 0 0;
+  background-color: #ffffff;
+}
+.screens-slider .screens-slide .card__image {
+  text-align: center;
+}
+.screens-slider .screens-slide .card__image img {
+  max-width: 220px;
+  margin: 0 auto;
+}
+.screens-slider .owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+.screens-slider .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.screens-slider .owl-dot.active span {
+  background: var(--primary-color);
 }

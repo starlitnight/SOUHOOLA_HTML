@@ -76,7 +76,7 @@
   &.show-all .faq-hidden {
     max-height: 500px;
     opacity: 1;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
   }
 
   &.show-all .btn-view-more {
@@ -401,6 +401,32 @@
     font-size: 14px;
     color: #888;
     margin-bottom: 0;
+  }
+
+  .support-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+
+    a {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #f3e8ff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: $primary-color;
+      font-size: 18px;
+      @include transition(all, 0.3s, ease);
+
+      &:hover {
+        background: $primary-color;
+        color: $white;
+        transform: translateY(-3px);
+      }
+    }
   }
 
   @media (max-width: 767px) {
@@ -4025,5 +4051,46 @@
 
   .inside-slide-item img {
     height: 220px;
+  }
+}
+
+// Legal Content (Terms & Conditions, Privacy Policy)
+// ==========================================================================
+
+.legal-content {
+  h3 {
+    color: $primary-color;
+    font-weight: $font-weight-bold;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-weight: $font-weight-semibold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  p {
+    line-height: 1.8;
+    color: $text-color;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    li {
+      line-height: 1.8;
+      color: $text-color;
+      margin-bottom: 5px;
+
+      strong {
+        color: #1e293b;
+      }
+    }
   }
 }

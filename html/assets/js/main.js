@@ -151,6 +151,19 @@
         }
     });
 
+      // ========== screens-slider (How it works mobile) JS ===========
+      $('.screens-slider').owlCarousel({
+        loop: true,
+        smartSpeed: 800,
+        margin: 15,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        items: 1
+      });
+
       // ========== project-box-slider JS ===========
       $('.project-box-slider').owlCarousel({
         items: 3,
